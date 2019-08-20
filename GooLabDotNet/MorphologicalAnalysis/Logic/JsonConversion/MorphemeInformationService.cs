@@ -22,7 +22,7 @@ namespace GooLabDotNet.MorphologicalAnalysis.Logic
         private string GetJsonRepresentationOfMorphemeInformation(MorphemeField morphemeInformation) {
             string result = "";
             switch(morphemeInformation) {
-                case MorphemeField.Kanji:
+                case MorphemeField.OriginalInput:
                 result = "form";
                 break;
 

@@ -3,7 +3,7 @@ using System.Runtime.CompilerServices;
 using GooLabDotNet.MorphologicalAnalysis.Models.Enums;
 
 [assembly:InternalsVisibleTo("GooLabDotNet.Test")]
-namespace GooLabDotNet.MorphologicalAnalysis.Logic.MorphemeFieldConversion
+namespace GooLabDotNet.MorphologicalAnalysis.Logic.MorphemeConversion
 {
     internal class PartOfSpeechDetectionService
     {

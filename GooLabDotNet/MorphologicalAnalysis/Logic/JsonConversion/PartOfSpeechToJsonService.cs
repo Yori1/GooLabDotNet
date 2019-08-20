@@ -5,7 +5,7 @@ using GooLabDotNet.MorphologicalAnalysis.Models.Domain;
 using GooLabDotNet.MorphologicalAnalysis.Models.JsonModels;
 namespace GooLabDotNet.MorphologicalAnalysis.Logic
 {
-    public class PartOfSpeechConversionService
+    public class PartOfSpeechToJsonService
     {
         public string ConvertToJsonReadyPartOfSpeech(IEnumerable<PartOfSpeech> partsOfSpeech)
         {

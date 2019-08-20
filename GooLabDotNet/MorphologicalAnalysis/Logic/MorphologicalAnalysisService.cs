@@ -15,9 +15,9 @@ namespace GooLabDotNet.MorphologicalAnalysis.Logic
     {
         private ApiKeyService apiKeyService;
         private MorphemeInformationService morphemeInformationService;
-        private PartOfSpeechConversionService partOfSpeechConversionService;
+        private PartOfSpeechToJsonService partOfSpeechConversionService;
         private IHttpClientFactory IHttpClientFactory;
-        public MorphologicalAnalysisService(ApiKeyService apiKeyService, MorphemeInformationService morphemeInformationService, PartOfSpeechConversionService partOfSpeechConversionService, IHttpClientFactory iHttpClientFactory)
+        public MorphologicalAnalysisService(ApiKeyService apiKeyService, MorphemeInformationService morphemeInformationService, PartOfSpeechToJsonService partOfSpeechConversionService, IHttpClientFactory iHttpClientFactory)
         {
             this.apiKeyService = apiKeyService;
             this.morphemeInformationService = morphemeInformationService;

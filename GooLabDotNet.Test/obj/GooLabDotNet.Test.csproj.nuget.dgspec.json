@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\yorep\\Documents\\projects\\kanji-shoubu\\GooLabDotNet\\GooLabDotNet.Test\\GooLabDotNet.Test.csproj": {}
+    "c:\\Users\\yorep\\Documents\\projects\\kanji-shoubu\\GooLabDotNet\\GooLabDotNet.Test\\GooLabDotNet.Test.csproj": {}
   },
   "projects": {
-    "C:\\Users\\yorep\\Documents\\projects\\kanji-shoubu\\GooLabDotNet\\GooLabDotNet.Test\\GooLabDotNet.Test.csproj": {
+    "c:\\Users\\yorep\\Documents\\projects\\kanji-shoubu\\GooLabDotNet\\GooLabDotNet.Test\\GooLabDotNet.Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\yorep\\Documents\\projects\\kanji-shoubu\\GooLabDotNet\\GooLabDotNet.Test\\GooLabDotNet.Test.csproj",
+        "projectUniqueName": "c:\\Users\\yorep\\Documents\\projects\\kanji-shoubu\\GooLabDotNet\\GooLabDotNet.Test\\GooLabDotNet.Test.csproj",
         "projectName": "GooLabDotNet.Test",
-        "projectPath": "C:\\Users\\yorep\\Documents\\projects\\kanji-shoubu\\GooLabDotNet\\GooLabDotNet.Test\\GooLabDotNet.Test.csproj",
+        "projectPath": "c:\\Users\\yorep\\Documents\\projects\\kanji-shoubu\\GooLabDotNet\\GooLabDotNet.Test\\GooLabDotNet.Test.csproj",
         "packagesPath": "C:\\Users\\yorep\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yorep\\Documents\\projects\\kanji-shoubu\\GooLabDotNet\\GooLabDotNet.Test\\obj\\",
+        "outputPath": "c:\\Users\\yorep\\Documents\\projects\\kanji-shoubu\\GooLabDotNet\\GooLabDotNet.Test\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -28,8 +28,8 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\Users\\yorep\\Documents\\projects\\kanji-shoubu\\GooLabDotNet\\GooLabDotNet\\GooLabDotNet.csproj": {
-                "projectPath": "C:\\Users\\yorep\\Documents\\projects\\kanji-shoubu\\GooLabDotNet\\GooLabDotNet\\GooLabDotNet.csproj"
+              "c:\\Users\\yorep\\Documents\\projects\\kanji-shoubu\\GooLabDotNet\\GooLabDotNet\\GooLabDotNet.csproj": {
+                "projectPath": "c:\\Users\\yorep\\Documents\\projects\\kanji-shoubu\\GooLabDotNet\\GooLabDotNet\\GooLabDotNet.csproj"
               }
             }
           }
@@ -81,14 +81,14 @@
         }
       }
     },
-    "C:\\Users\\yorep\\Documents\\projects\\kanji-shoubu\\GooLabDotNet\\GooLabDotNet\\GooLabDotNet.csproj": {
+    "c:\\Users\\yorep\\Documents\\projects\\kanji-shoubu\\GooLabDotNet\\GooLabDotNet\\GooLabDotNet.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\yorep\\Documents\\projects\\kanji-shoubu\\GooLabDotNet\\GooLabDotNet\\GooLabDotNet.csproj",
+        "projectUniqueName": "c:\\Users\\yorep\\Documents\\projects\\kanji-shoubu\\GooLabDotNet\\GooLabDotNet\\GooLabDotNet.csproj",
         "projectName": "GooLabDotNet",
-        "projectPath": "C:\\Users\\yorep\\Documents\\projects\\kanji-shoubu\\GooLabDotNet\\GooLabDotNet\\GooLabDotNet.csproj",
+        "projectPath": "c:\\Users\\yorep\\Documents\\projects\\kanji-shoubu\\GooLabDotNet\\GooLabDotNet\\GooLabDotNet.csproj",
         "packagesPath": "C:\\Users\\yorep\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yorep\\Documents\\projects\\kanji-shoubu\\GooLabDotNet\\GooLabDotNet\\obj\\",
+        "outputPath": "c:\\Users\\yorep\\Documents\\projects\\kanji-shoubu\\GooLabDotNet\\GooLabDotNet\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

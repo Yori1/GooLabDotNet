@@ -1,6 +1,7 @@
 using System.Linq;
 using System.Collections.Generic;
 using GooLabDotNet.MorphologicalAnalysis.Models.Domain;
+
 namespace GooLabDotNet.MorphologicalAnalysis.Logic
 {
     public class SentenceService
@@ -19,6 +20,6 @@ namespace GooLabDotNet.MorphologicalAnalysis.Logic
                 var morpheme = JsonMorphemeToMorpheme(jsonMorpheme);
                 morphemes.Add(morpheme);
             }
-        }*/
-    }
+        }
+    */}
 }

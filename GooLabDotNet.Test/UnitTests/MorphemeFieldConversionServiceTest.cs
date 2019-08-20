@@ -1,6 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using GooLabDotNet.Test.DependencyInjection;
-using GooLabDotNet.MorphologicalAnalysis.Logic.MorphemeFieldConversion;
+using GooLabDotNet.MorphologicalAnalysis.Logic.MorphemeConversion;
 using GooLabDotNet.MorphologicalAnalysis.Models.Enums;
 
 namespace GooLabDotNet.Test.UnitTests
@@ -28,9 +28,9 @@ namespace GooLabDotNet.Test.UnitTests
         public void TestForm() {
                         string val = "form";
             MorphemeField result = service.DetermineField(val);
-            Assert.AreEqual(result, MorphemeField.Kanji);
+            Assert.AreEqual(result, MorphemeField.OriginalInput);
         }
-        
+
         [TestMethod]
 
         public void TestRead() {

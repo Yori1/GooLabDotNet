@@ -3,7 +3,7 @@ using GooLabDotNet.MorphologicalAnalysis.Models.Enums;
 using System.Runtime.CompilerServices;
 
 [assembly:InternalsVisibleTo("GooLabDotNet.Test")]
-namespace GooLabDotNet.MorphologicalAnalysis.Logic.MorphemeFieldConversion
+namespace GooLabDotNet.MorphologicalAnalysis.Logic.MorphemeConversion
 {
     internal class MorphemeFieldConversionService
     {
@@ -15,7 +15,7 @@ namespace GooLabDotNet.MorphologicalAnalysis.Logic.MorphemeFieldConversion
         }
         private void initializeDictionary()
         {
-            jsonFieldAndEnumDictionary.Add("form", MorphemeField.Kanji);
+            jsonFieldAndEnumDictionary.Add("form", MorphemeField.OriginalInput);
             jsonFieldAndEnumDictionary.Add("read", MorphemeField.Katakana);
             jsonFieldAndEnumDictionary.Add("pos", MorphemeField.PartOfSpeech);
         }

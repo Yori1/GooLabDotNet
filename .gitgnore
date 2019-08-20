@@ -1,2 +1,5 @@
 GooLabDotNet/bin
 GooLabDotNet.Test/bin
+GooLabDotNet/obj
+GooLabDotNet.Test/obj
+
