@@ -23,12 +23,20 @@ namespace GooLabDotNet.Test.UnitTests
             Assert.AreEqual(result, MorphemeField.PartOfSpeech);
         }
 
-        public void TestForm() {
 
+        [TestMethod]
+        public void TestForm() {
+                        string val = "form";
+            MorphemeField result = service.DetermineField(val);
+            Assert.AreEqual(result, MorphemeField.Kanji);
         }
+        
+        [TestMethod]
 
         public void TestRead() {
-
+                        string val = "read";
+            MorphemeField result = service.DetermineField(val);
+            Assert.AreEqual(result, MorphemeField.Katakana);
         }
     }
 }

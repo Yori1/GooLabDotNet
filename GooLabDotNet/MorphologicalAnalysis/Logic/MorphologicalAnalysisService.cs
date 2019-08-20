@@ -30,7 +30,7 @@ namespace GooLabDotNet.MorphologicalAnalysis.Logic
 
             string key = apiKeyService.ApiKey;
             string infoFilter = morphemeInformationService.GetJsonRepresentationOfMorphemeInformationEnumerable(request.InfoToInclude);
-            string filters = partOfSpeechConversionService.convertToJsonReadyPartOfSpeech(request.PartsToFilterOn);
+            string filters = partOfSpeechConversionService.ConvertToJsonReadyPartOfSpeech(request.PartsToFilterOn);
             var jsonRequestModel = new MorphologicalAnalysisRequestJson(apiKeyService.ApiKey, request.RequestId, request.Sentence, infoFilter, filters);
 
             string jsonText = JsonConvert.SerializeObject(jsonRequestModel);

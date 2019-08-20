@@ -7,7 +7,7 @@ namespace GooLabDotNet.MorphologicalAnalysis.Logic
 {
     public class PartOfSpeechConversionService
     {
-        public string convertToJsonReadyPartOfSpeech(IEnumerable<PartOfSpeech> partsOfSpeech)
+        public string ConvertToJsonReadyPartOfSpeech(IEnumerable<PartOfSpeech> partsOfSpeech)
         {
             var result = "";
 
@@ -20,14 +20,14 @@ namespace GooLabDotNet.MorphologicalAnalysis.Logic
                     result += " |";
                 }
 
-                result += getJsonStringRepresentation(PartOfSpeech.CaseMarkingParticle);
+                result += GetJsonStringRepresentation(PartOfSpeech.CaseMarkingParticle);
 
             }
 
             return result;
         }
 
-        private string getJsonStringRepresentation(PartOfSpeech partOfSpeech)
+        private string GetJsonStringRepresentation(PartOfSpeech partOfSpeech)
         {
             string result = "";
             switch (partOfSpeech)

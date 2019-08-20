@@ -6,6 +6,8 @@ namespace GooLabDotNet.MorphologicalAnalysis.Models.Enums
         SentenceEndingParticle, //終動詞
         VerbSuffix, //動詞接尾辞
 
+        NotRecognized,
+
 
     }
 }
