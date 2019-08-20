@@ -1,0 +1,9 @@
+c:\Users\yorep\Documents\projects\kanji-shoubu\KanjiRenshuu.GooWrapper\obj\Debug\netcoreapp3.0\KanjiRenshuu.GooWrapper.csprojAssemblyReference.cache
+c:\Users\yorep\Documents\projects\kanji-shoubu\KanjiRenshuu.GooWrapper\obj\Debug\netcoreapp3.0\KanjiRenshuu.GooWrapper.csproj.CoreCompileInputs.cache
+c:\Users\yorep\Documents\projects\kanji-shoubu\KanjiRenshuu.GooWrapper\obj\Debug\netcoreapp3.0\KanjiRenshuu.GooWrapper.AssemblyInfoInputs.cache
+c:\Users\yorep\Documents\projects\kanji-shoubu\KanjiRenshuu.GooWrapper\obj\Debug\netcoreapp3.0\KanjiRenshuu.GooWrapper.AssemblyInfo.cs
+c:\Users\yorep\Documents\projects\kanji-shoubu\KanjiRenshuu.GooWrapper\bin\Debug\netcoreapp3.0\KanjiRenshuu.GooWrapper.deps.json
+c:\Users\yorep\Documents\projects\kanji-shoubu\KanjiRenshuu.GooWrapper\bin\Debug\netcoreapp3.0\KanjiRenshuu.GooWrapper.dll
+c:\Users\yorep\Documents\projects\kanji-shoubu\KanjiRenshuu.GooWrapper\bin\Debug\netcoreapp3.0\KanjiRenshuu.GooWrapper.pdb
+c:\Users\yorep\Documents\projects\kanji-shoubu\KanjiRenshuu.GooWrapper\obj\Debug\netcoreapp3.0\KanjiRenshuu.GooWrapper.dll
+c:\Users\yorep\Documents\projects\kanji-shoubu\KanjiRenshuu.GooWrapper\obj\Debug\netcoreapp3.0\KanjiRenshuu.GooWrapper.pdb
