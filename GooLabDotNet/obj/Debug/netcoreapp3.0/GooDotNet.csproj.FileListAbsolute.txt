@@ -1,9 +1,0 @@
-c:\Users\yorep\Documents\projects\kanji-shoubu\GooDotNet\bin\Debug\netcoreapp3.0\GooDotNet.deps.json
-c:\Users\yorep\Documents\projects\kanji-shoubu\GooDotNet\bin\Debug\netcoreapp3.0\GooDotNet.dll
-c:\Users\yorep\Documents\projects\kanji-shoubu\GooDotNet\bin\Debug\netcoreapp3.0\GooDotNet.pdb
-c:\Users\yorep\Documents\projects\kanji-shoubu\GooDotNet\obj\Debug\netcoreapp3.0\GooDotNet.csprojAssemblyReference.cache
-c:\Users\yorep\Documents\projects\kanji-shoubu\GooDotNet\obj\Debug\netcoreapp3.0\GooDotNet.csproj.CoreCompileInputs.cache
-c:\Users\yorep\Documents\projects\kanji-shoubu\GooDotNet\obj\Debug\netcoreapp3.0\GooDotNet.AssemblyInfoInputs.cache
-c:\Users\yorep\Documents\projects\kanji-shoubu\GooDotNet\obj\Debug\netcoreapp3.0\GooDotNet.AssemblyInfo.cs
-c:\Users\yorep\Documents\projects\kanji-shoubu\GooDotNet\obj\Debug\netcoreapp3.0\GooDotNet.dll
-c:\Users\yorep\Documents\projects\kanji-shoubu\GooDotNet\obj\Debug\netcoreapp3.0\GooDotNet.pdb
