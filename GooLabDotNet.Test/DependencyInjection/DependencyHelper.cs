@@ -1,3 +1,5 @@
+using GooLabDotNet.MorphologicalAnalysis.Logic;
+using GooLabDotNet.MorphologicalAnalysis.Logic.JsonConversion;
 using GooLabDotNet.MorphologicalAnalysis.Logic.JsonConversion.CharacterSetDetection;
 using GooLabDotNet.MorphologicalAnalysis.Logic.JsonConversion.MorphemeConversion;
 
@@ -5,6 +7,8 @@ namespace GooLabDotNet.Test.DependencyInjection
 {
     internal class DependencyHelper
     {
+
+
         public ExactCharacterSetDetectionService GetExactCharacterSetDetectionService()
         {
             return new ExactCharacterSetDetectionService();
@@ -27,6 +31,22 @@ namespace GooLabDotNet.Test.DependencyInjection
         public MorphemeConversionService GetMorphemeConversionService() {
             return new MorphemeConversionService(GetMorphemeFieldConversionService(), GetKatakanaRecognitionService(), GetPartOfSpeechDetectionService());
         }
+
+        public ApiKeyService GetApiKeyService()
+        {
+            return new ApiKeyService();
+        }
+
+        public MorphemeInformationService GetMorphemeInformationService()
+        {
+            return new MorphemeInformationService();
+        }
+
+        public PartOfSpeechToJsonService GetPartOfSpeechToJsonService()
+        {
+            return new PartOfSpeechToJsonService();
+        }
+            
 
     }
 }

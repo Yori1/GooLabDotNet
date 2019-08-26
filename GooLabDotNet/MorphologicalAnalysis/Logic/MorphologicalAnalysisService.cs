@@ -36,8 +36,10 @@ namespace GooLabDotNet.MorphologicalAnalysis.Logic
             var jsonRequestModel = new MorphologicalAnalysisRequestJson(apiKeyService.ApiKey, request.RequestId, request.Sentence, infoFilter, filters);
 
             string jsonText = JsonConvert.SerializeObject(jsonRequestModel);
-            HttpRequestMessage httpRequestMessage = new HttpRequestMessage(HttpMethod.Post, "https://labs.goo.ne.jp/api/morph");
-            httpRequestMessage.Content = new StringContent(jsonText, Encoding.UTF8, "application/json");
+            HttpRequestMessage httpRequestMessage = new HttpRequestMessage(HttpMethod.Post, "https://labs.goo.ne.jp/api/morph")
+            {
+                Content = new StringContent(jsonText, Encoding.UTF8, "application/json")
+            };
 
             var client = IHttpClientFactory.CreateClient();
             var response = await client.SendAsync(httpRequestMessage);
@@ -49,6 +51,8 @@ namespace GooLabDotNet.MorphologicalAnalysis.Logic
                 var jsonResultModel = await response.Content.ReadAsAsync<MorphologicalAnalysisRequestJson>();
 
             }
+
+
 
             return result;
         }

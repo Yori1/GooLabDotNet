@@ -1,7 +1,7 @@
 using System.Runtime.CompilerServices;
 
 [assembly: InternalsVisibleTo("GooLabDotNet.Test")]
-namespace GooLabDotNet.MorphologicalAnalysis.Logic.CharacterSetDetection
+namespace GooLabDotNet.MorphologicalAnalysis.Logic.JsonConversion.CharacterSetDetection
 {
     internal class ExactCharacterSetDetectionService
     {

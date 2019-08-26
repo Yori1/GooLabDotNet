@@ -6,6 +6,5 @@ namespace GooLabDotNet.MorphologicalAnalysis.Models.Domain {
         public string RequestId { get; private set; }
         public List<Sentence> Sentences { get; private set; }
 
-
     }
 }

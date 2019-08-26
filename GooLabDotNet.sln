@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26124.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29215.179
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GooLabDotNet", "GooLabDotNet\GooLabDotNet.csproj", "{421A7120-28B0-49A1-A242-EC981A03A38A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GooLabDotNet", "GooLabDotNet\GooLabDotNet.csproj", "{421A7120-28B0-49A1-A242-EC981A03A38A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GooLabDotNet.Test", "GooLabDotNet.Test\GooLabDotNet.Test.csproj", "{5FC3E33D-3878-4930-977F-8A2CEC83F9BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GooLabDotNet.Test", "GooLabDotNet.Test\GooLabDotNet.Test.csproj", "{5FC3E33D-3878-4930-977F-8A2CEC83F9BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GooLabDotNet.EndToEndTests", "GooLabDotNet.EndToEndTests\GooLabDotNet.EndToEndTests.csproj", "{9F16CD70-6906-425E-8210-10E8E8427158}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{421A7120-28B0-49A1-A242-EC981A03A38A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -44,5 +43,23 @@ Global
 		{5FC3E33D-3878-4930-977F-8A2CEC83F9BE}.Release|x64.Build.0 = Release|Any CPU
 		{5FC3E33D-3878-4930-977F-8A2CEC83F9BE}.Release|x86.ActiveCfg = Release|Any CPU
 		{5FC3E33D-3878-4930-977F-8A2CEC83F9BE}.Release|x86.Build.0 = Release|Any CPU
+		{9F16CD70-6906-425E-8210-10E8E8427158}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F16CD70-6906-425E-8210-10E8E8427158}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F16CD70-6906-425E-8210-10E8E8427158}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{9F16CD70-6906-425E-8210-10E8E8427158}.Debug|x64.Build.0 = Debug|Any CPU
+		{9F16CD70-6906-425E-8210-10E8E8427158}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{9F16CD70-6906-425E-8210-10E8E8427158}.Debug|x86.Build.0 = Debug|Any CPU
+		{9F16CD70-6906-425E-8210-10E8E8427158}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F16CD70-6906-425E-8210-10E8E8427158}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F16CD70-6906-425E-8210-10E8E8427158}.Release|x64.ActiveCfg = Release|Any CPU
+		{9F16CD70-6906-425E-8210-10E8E8427158}.Release|x64.Build.0 = Release|Any CPU
+		{9F16CD70-6906-425E-8210-10E8E8427158}.Release|x86.ActiveCfg = Release|Any CPU
+		{9F16CD70-6906-425E-8210-10E8E8427158}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {907B8588-5D9A-44BF-A5CB-054935B1689C}
 	EndGlobalSection
 EndGlobal

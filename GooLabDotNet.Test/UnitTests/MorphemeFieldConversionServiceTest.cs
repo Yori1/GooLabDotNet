@@ -11,13 +11,15 @@ namespace GooLabDotNet.Test.UnitTests
         private MorphemeFieldConversionService service;
 
         [TestInitialize]
-        public void TestInitialize() {
+        public void TestInitialize()
+        {
             DependencyHelper dependencyHelper = new DependencyHelper();
             service = dependencyHelper.GetMorphemeFieldConversionService();
         }
 
         [TestMethod]
-        public void TestPos(){
+        public void TestPos()
+        {
             string val = "pos";
             MorphemeField result = service.DetermineField(val);
             Assert.AreEqual(result, MorphemeField.PartOfSpeech);
@@ -25,16 +27,18 @@ namespace GooLabDotNet.Test.UnitTests
 
 
         [TestMethod]
-        public void TestForm() {
-                        string val = "form";
+        public void TestForm()
+        {
+            string val = "form";
             MorphemeField result = service.DetermineField(val);
             Assert.AreEqual(result, MorphemeField.OriginalInput);
         }
 
         [TestMethod]
 
-        public void TestRead() {
-                        string val = "read";
+        public void TestRead()
+        {
+            string val = "read";
             MorphemeField result = service.DetermineField(val);
             Assert.AreEqual(result, MorphemeField.Katakana);
         }
