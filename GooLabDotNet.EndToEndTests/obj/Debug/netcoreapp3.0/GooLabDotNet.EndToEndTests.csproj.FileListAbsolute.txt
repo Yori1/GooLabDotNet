@@ -93,3 +93,7 @@ D:\Yori\projects\GooLabDotNet\GooLabDotNet.EndToEndTests\obj\Debug\netcoreapp3.0
 D:\Yori\projects\GooLabDotNet\GooLabDotNet.EndToEndTests\obj\Debug\netcoreapp3.0\GooLabDotNet.EndToEndTests.csproj.CopyComplete
 D:\Yori\projects\GooLabDotNet\GooLabDotNet.EndToEndTests\obj\Debug\netcoreapp3.0\GooLabDotNet.EndToEndTests.dll
 D:\Yori\projects\GooLabDotNet\GooLabDotNet.EndToEndTests\obj\Debug\netcoreapp3.0\GooLabDotNet.EndToEndTests.pdb
+D:\Yori\projects\GooLabDotNet\GooLabDotNet.EndToEndTests\bin\Debug\netcoreapp3.0\System.Net.Http.Formatting.dll
+D:\Yori\projects\GooLabDotNet\GooLabDotNet.EndToEndTests\bin\Debug\netcoreapp3.0\Newtonsoft.Json.Bson.dll
+D:\Yori\projects\GooLabDotNet\GooLabDotNet.EndToEndTests\bin\Debug\netcoreapp3.0\GooLabDotNet.dll
+D:\Yori\projects\GooLabDotNet\GooLabDotNet.EndToEndTests\bin\Debug\netcoreapp3.0\GooLabDotNet.pdb

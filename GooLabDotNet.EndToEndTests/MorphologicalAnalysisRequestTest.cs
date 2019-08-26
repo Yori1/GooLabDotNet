@@ -2,11 +2,9 @@
 using GooLabDotNet.MorphologicalAnalysis.Logic;
 using GooLabDotNet.MorphologicalAnalysis.Models.Domain;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.VisualStudio.TestPlatform.ObjectModel;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-
-namespace GooLabDotNet.Test.EndToEnd
+namespace GooLabDotNet.EndToEndTests
 {
     [TestClass]
     public class MorphologicalAnalysisRequestTest
@@ -24,8 +22,8 @@ namespace GooLabDotNet.Test.EndToEnd
         }
 
         [TestMethod]
-        public  void SendingRequest()
-        { 
+        public void SendingRequest()
+        {
             MorphologicalRequest request = new MorphologicalRequest("これは日本語の文章であります。", "1");
             Task<MorphologicalResult> resultTask = morphologicalAnalysisService.GetResults(request);
             MorphologicalResult result = null;

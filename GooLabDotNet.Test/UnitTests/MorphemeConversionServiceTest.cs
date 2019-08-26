@@ -2,9 +2,11 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using GooLabDotNet.Test.DependencyInjection;
 using System.Collections.Generic;
 using GooLabDotNet.MorphologicalAnalysis.Logic.JsonConversion.MorphemeConversion;
+using GooLabDotNet.MorphologicalAnalysis.Models.Enums;
 
 namespace GooLabDotNet.Test.UnitTests
 {
+    [TestClass]
     public class MorphemeConversionServiceTest
     {
         private MorphemeConversionService morphemeConversionService;
@@ -16,18 +18,17 @@ namespace GooLabDotNet.Test.UnitTests
         }
 
         [TestMethod]
-        public void HasPropertiesAfterConvertingToMorpheme() {
-            
-        }
-
-        private List<List<string>> GetTestJsonMorphemes() {
-            var result = new List<List<string>>();
-            result.Add(new List<string>() {
+        public void HasPropertiesAfterConvertingToMorpheme()
+        {
+            var testJsonMorpheme = new List<string>()
+            {
                 "文章",
-                "",
-                "助詞"
-            });
-            return result;
+                "ブンショウ"
+            };
+            var result = morphemeConversionService.ConvertToMorpheme(testJsonMorpheme);
+            Assert.AreEqual("ブンショウ", result.KatakanaReading);
+            Assert.AreEqual(PartOfSpeech.NotRecognized, result.PartOfSpeech);
+            Assert.AreEqual("文章", result.Kanji);
         }
     }
 }

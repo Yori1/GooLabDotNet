@@ -51,5 +51,12 @@ namespace GooLabDotNet.Test.UnitTests
             string s = "漢字あコレハカタカナデカカレタブンショウデス.!?-+";
             Assert.IsFalse(katakanaRecognitionService.IsSentenceWrittenInKatakana(s));
         }
+
+        [TestMethod]
+        public void FalseOnSentenceFullKanji()
+        {
+            string s = "漢字";
+            Assert.IsFalse(katakanaRecognitionService.IsSentenceWrittenInKatakana(s));
+        }
     }
 }
