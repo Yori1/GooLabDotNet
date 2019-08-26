@@ -4,7 +4,7 @@ using GooLabDotNet.MorphologicalAnalysis.Models.Enums;
 [assembly:InternalsVisibleTo("GooLabDotNet.Test")]
 namespace GooLabDotNet.MorphologicalAnalysis.Logic.JsonConversion.MorphemeConversion
 {
-    internal class PartOfSpeechDetectionService
+    internal class PartOfSpeechDetectionService: IPartOfSpeechDetectionService
     {
         public PartOfSpeech DetectPartOfSpeech(string jsonPartOfSpeech) {
             PartOfSpeech result = PartOfSpeech.NotRecognized;

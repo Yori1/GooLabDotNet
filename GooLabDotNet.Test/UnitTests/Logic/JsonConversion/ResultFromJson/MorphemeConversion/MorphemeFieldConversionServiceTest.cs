@@ -8,7 +8,7 @@ namespace GooLabDotNet.Test.UnitTests
     [TestClass]
     public class MorphemeFieldConversionServiceTest
     {
-        private MorphemeFieldConversionService service;
+        private FieldConversionService service;
 
         [TestInitialize]
         public void TestInitialize()

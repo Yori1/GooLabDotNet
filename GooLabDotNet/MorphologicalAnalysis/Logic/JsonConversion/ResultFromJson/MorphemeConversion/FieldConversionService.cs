@@ -1,15 +1,16 @@
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
+using GooLabDotNet.MorphologicalAnalysis.Logic.JsonConversion.JsonToResult.MorphemeConversion;
 using GooLabDotNet.MorphologicalAnalysis.Models.Enums;
 
 [assembly:InternalsVisibleTo("GooLabDotNet.Test")]
 namespace GooLabDotNet.MorphologicalAnalysis.Logic.JsonConversion.MorphemeConversion
 {
-    internal class MorphemeFieldConversionService
+    internal class FieldConversionService: IFieldConversionService
     {
         private Dictionary<string, MorphemeField> jsonFieldAndEnumDictionary = new Dictionary<string, MorphemeField>();
 
-        public MorphemeFieldConversionService()
+        public FieldConversionService()
         {
             initializeDictionary();
         }

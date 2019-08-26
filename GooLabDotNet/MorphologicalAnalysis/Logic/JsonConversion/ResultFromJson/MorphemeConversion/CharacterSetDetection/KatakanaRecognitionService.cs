@@ -1,9 +1,10 @@
 using System.Runtime.CompilerServices;
+using GooLabDotNet.MorphologicalAnalysis.Logic.JsonConversion.MorphemeConversion.CharacterSetDetection;
 
 [assembly: InternalsVisibleTo("GooLabDotNet.Test")]
 namespace GooLabDotNet.MorphologicalAnalysis.Logic.JsonConversion.CharacterSetDetection
 {
-    internal class KatakanaRecognitionService
+    internal class KatakanaRecognitionService : IKatakanaRecognitionService
     {
         private const int katakanaRangeMin = 0x30A0;
         private const int katakanaRangeMax = 0x30FF;

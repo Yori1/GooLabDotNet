@@ -1,9 +1,10 @@
 using System.Runtime.CompilerServices;
+using GooLabDotNet.MorphologicalAnalysis.Logic.JsonConversion.MorphemeConversion.CharacterSetDetection;
 
 [assembly: InternalsVisibleTo("GooLabDotNet.Test")]
 namespace GooLabDotNet.MorphologicalAnalysis.Logic.JsonConversion.CharacterSetDetection
 {
-    internal class ExactCharacterSetDetectionService
+    internal class ExactCharacterSetDetectionService: IExactCharacterSetDetectionService
     {
         private const int kanjiRangeMin = 0x4e00;
         private const int kanjiRangeMax = 0x9faf;

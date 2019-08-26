@@ -15,7 +15,7 @@ using Newtonsoft.Json;
 
 namespace GooLabDotNet.MorphologicalAnalysis.Logic
 {
-    public class MorphologicalAnalysisService
+    public class MorphologicalAnalysisService: IMorphologicalAnalysisService
     {
         private ApiKeyService apiKeyService;
         private SentenceService sentenceService;

@@ -6,14 +6,14 @@ using GooLabDotNet.MorphologicalAnalysis.Models.Enums;
 
 [assembly : InternalsVisibleTo ("GooLabDotNet.Test")]
 namespace GooLabDotNet.MorphologicalAnalysis.Logic.JsonConversion.MorphemeConversion {
-    internal class MorphemeConversionService {
+    internal class MorphemeConversionService: IMorphemeConversionService {
 
-        private MorphemeFieldConversionService morphemeFieldConversionService;
+        private FieldConversionService fieldConversionService;
         private KatakanaRecognitionService katakanaRecognitionService;
         private PartOfSpeechDetectionService partOfSpeechDetectionService;
 
-        public MorphemeConversionService (MorphemeFieldConversionService morphemeFieldConversionService, KatakanaRecognitionService katakanaRecognitionService, PartOfSpeechDetectionService partOfSpeechDetectionService) {
-            this.morphemeFieldConversionService = morphemeFieldConversionService;
+        public MorphemeConversionService (FieldConversionService fieldConversionService, KatakanaRecognitionService katakanaRecognitionService, PartOfSpeechDetectionService partOfSpeechDetectionService) {
+            this.fieldConversionService = fieldConversionService;
             this.katakanaRecognitionService = katakanaRecognitionService;
             this.partOfSpeechDetectionService = partOfSpeechDetectionService;
         }

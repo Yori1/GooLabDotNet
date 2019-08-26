@@ -17,9 +17,9 @@ namespace GooLabDotNet.Test.DependencyInjection
             return new KatakanaRecognitionService(GetExactCharacterSetDetectionService());
         }
 
-        public MorphemeFieldConversionService GetMorphemeFieldConversionService()
+        public FieldConversionService GetMorphemeFieldConversionService()
         {
-            return new MorphemeFieldConversionService();
+            return new FieldConversionService();
         }
 
         public PartOfSpeechDetectionService GetPartOfSpeechDetectionService() {
