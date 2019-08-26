@@ -1,13 +1,16 @@
-using System.Text;
+﻿using System.Text;
 using System.Runtime.Serialization;
 using System;
 using System.Collections.Generic;
+using System.Net;
+using System.Web.Http;
 using System.Net.Http;
 using System.Threading.Tasks;
 using GooLabDotNet.MorphologicalAnalysis.Logic.JsonConversion;
 using GooLabDotNet.MorphologicalAnalysis.Models.Enums;
 using GooLabDotNet.MorphologicalAnalysis.Models.Domain;
 using GooLabDotNet.MorphologicalAnalysis.Models.JsonModels;
+using Microsoft.AspNetCore.Server.IIS;
 using Newtonsoft.Json;
 
 namespace GooLabDotNet.MorphologicalAnalysis.Logic
@@ -15,24 +18,29 @@ namespace GooLabDotNet.MorphologicalAnalysis.Logic
     public class MorphologicalAnalysisService
     {
         private ApiKeyService apiKeyService;
-        private MorphemeInformationService morphemeInformationService;
-        private PartOfSpeechToJsonService partOfSpeechConversionService;
+        private SentenceService sentenceService;
         private IHttpClientFactory IHttpClientFactory;
-        public MorphologicalAnalysisService(ApiKeyService apiKeyService, MorphemeInformationService morphemeInformationService, PartOfSpeechToJsonService partOfSpeechConversionService, IHttpClientFactory iHttpClientFactory)
+        private MorphemeFieldService morphemeFieldService;
+
+        internal MorphologicalAnalysisService(ApiKeyService apiKeyService, SentenceService sentenceService, IHttpClientFactory httpClientFactory, MorphemeFieldService morphemeFieldService)
         {
             this.apiKeyService = apiKeyService;
-            this.morphemeInformationService = morphemeInformationService;
-            this.partOfSpeechConversionService = partOfSpeechConversionService;
-            IHttpClientFactory = iHttpClientFactory;
+            this.sentenceService = sentenceService;
+            IHttpClientFactory = httpClientFactory;
+            this.morphemeFieldService = morphemeFieldService;
         }
 
-        public async Task<MorphologicalResult> GetResults(MorphologicalRequest request)
-        {
 
-            string key = apiKeyService.ApiKey;
+        public async Task<MorphologicalResult> GetResults(MorphologicalRequest request, string specifiedKey = null)
+        {
+            if (specifiedKey != null)
+            {
+                apiKeyService.ApiKey = specifiedKey;
+            }
+
             var infoToShow = new List<MorphemeField>() { MorphemeField.Katakana, MorphemeField.OriginalInput };
-            string infoFilter = morphemeInformationService.GetJsonRepresentationOfMorphemeInformationEnumerable(infoToShow);
-            string filters = "";
+            string infoFilter = morphemeFieldService.GetJsonRepresentationOfMorphemeInformationEnumerable(infoToShow);
+            string filters = "名詞";
             var jsonRequestModel = new MorphologicalAnalysisRequestJson(apiKeyService.ApiKey, request.RequestId, request.Sentence, infoFilter, filters);
 
             string jsonText = JsonConvert.SerializeObject(jsonRequestModel);
@@ -44,17 +52,19 @@ namespace GooLabDotNet.MorphologicalAnalysis.Logic
             var client = IHttpClientFactory.CreateClient();
             var response = await client.SendAsync(httpRequestMessage);
 
-            MorphologicalResult result = null;
-
             if (response.IsSuccessStatusCode)
-            {
-                var jsonResultModel = await response.Content.ReadAsAsync<MorphologicalAnalysisRequestJson>();
-
+            {/*
+                MorphologicalRequestResultJson parsingResult = await response.Content.ReadAsAsync<MorphologicalRequestResultJson>();
+                MorphologicalResult morphologicalResult = new MorphologicalResult();*/
+                return null;
             }
 
-
-
-            return result;
+            else
+            {
+                return null;
+            }
+            
         }
+
     }
 }

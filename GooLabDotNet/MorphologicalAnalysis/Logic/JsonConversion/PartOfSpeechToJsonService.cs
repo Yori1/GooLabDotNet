@@ -16,7 +16,7 @@ namespace GooLabDotNet.MorphologicalAnalysis.Logic.JsonConversion
                 var partOfSpeech = partsOfSpeech.ElementAt(x);
                 if (x > 0)
                 {
-                    result += " |";
+                    result += "|";
                 }
 
                 result += GetJsonStringRepresentation(PartOfSpeech.CaseMarkingParticle);

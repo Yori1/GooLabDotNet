@@ -7,8 +7,6 @@ namespace GooLabDotNet.Test.DependencyInjection
 {
     internal class DependencyHelper
     {
-
-
         public ExactCharacterSetDetectionService GetExactCharacterSetDetectionService()
         {
             return new ExactCharacterSetDetectionService();
@@ -37,9 +35,9 @@ namespace GooLabDotNet.Test.DependencyInjection
             return new ApiKeyService();
         }
 
-        public MorphemeInformationService GetMorphemeInformationService()
+        public MorphemeFieldService GetMorphemeInformationService()
         {
-            return new MorphemeInformationService();
+            return new MorphemeFieldService();
         }
 
         public PartOfSpeechToJsonService GetPartOfSpeechToJsonService()

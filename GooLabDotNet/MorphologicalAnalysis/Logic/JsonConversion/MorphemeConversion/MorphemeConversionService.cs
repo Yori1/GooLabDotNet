@@ -7,10 +7,11 @@ using GooLabDotNet.MorphologicalAnalysis.Models.Enums;
 [assembly : InternalsVisibleTo ("GooLabDotNet.Test")]
 namespace GooLabDotNet.MorphologicalAnalysis.Logic.JsonConversion.MorphemeConversion {
     internal class MorphemeConversionService {
+
         private MorphemeFieldConversionService morphemeFieldConversionService;
         private KatakanaRecognitionService katakanaRecognitionService;
-
         private PartOfSpeechDetectionService partOfSpeechDetectionService;
+
         public MorphemeConversionService (MorphemeFieldConversionService morphemeFieldConversionService, KatakanaRecognitionService katakanaRecognitionService, PartOfSpeechDetectionService partOfSpeechDetectionService) {
             this.morphemeFieldConversionService = morphemeFieldConversionService;
             this.katakanaRecognitionService = katakanaRecognitionService;

@@ -12,10 +12,9 @@ namespace GooLabDotNet
     {
         public static IServiceCollection AddGooLabDotNet(this IServiceCollection service)
         {
-            service.AddScoped<MorphemeInformationService>();
+            service.AddScoped<MorphemeFieldService>();
             service.AddScoped<PartOfSpeechToJsonService>();
             service.AddScoped<SentenceService>();
-            service.AddScoped<WordService>();
             service.AddScoped<MorphologicalAnalysisService>();
             service.AddHttpClient();
             service.AddScoped<ApiKeyService>();

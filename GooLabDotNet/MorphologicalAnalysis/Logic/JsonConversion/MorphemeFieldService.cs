@@ -4,14 +4,14 @@ using GooLabDotNet.MorphologicalAnalysis.Models.Enums;
 
 namespace GooLabDotNet.MorphologicalAnalysis.Logic.JsonConversion
 {
-    public class MorphemeInformationService
+    public class MorphemeFieldService
     {
         public string GetJsonRepresentationOfMorphemeInformationEnumerable(IEnumerable<MorphemeField> morphemeInformation) {
             string result = "";
             for(var x = 0; x<morphemeInformation.Count(); x++) {
                 var info = morphemeInformation.ElementAt(x);
                 if(x > 0) {
-                    result += " |";
+                    result += "|";
                 }
                 result += GetJsonRepresentationOfMorphemeInformation(info);
             }
