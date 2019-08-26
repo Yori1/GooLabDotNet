@@ -2,6 +2,8 @@ GooLabDotNet/bin
 GooLabDotNet.Test/bin
 GooLabDotNet/obj
 GooLabDotNet.Test/obj
+GooLabDotNet.EndToEndTests/bin
+GooLabDotNet.EndToEndTests/obj
 .vs/
 .vscode/
 
